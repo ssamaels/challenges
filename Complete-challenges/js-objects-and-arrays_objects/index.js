@@ -31,8 +31,8 @@ const personToChange = {
   age: 24,
 };
 
-personToChange.name = "Alex";
-personToChange.age = 35;
+personToChange.name = personAlex.name;
+personToChange.age = personAlex.age;
 console.log("personToChange: ", personToChange);
 
 // EXERCISE 4
