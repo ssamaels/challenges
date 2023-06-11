@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <h1>PERSONAL PROFILE</h1>
+      <fieldset>
+        <p>We want to know you. Tell us a bit about yourself.</p>
+      <fieldset aria-labelledby="personal-information-legend">
+      <legend id="personal-information-legend">Personal information</legend>
+      <label for="first-name">First Name:</label>
+      <input id="first-name" type="text" name="first-name" />
+      <label for="last-name">Last Name:</label>
+      <input id="last-name" type="text" name="last-name" />
+      <label for="birthday">Your Birthday:</label>
+      <input id="birthday" type="date" name="birthday"/>
+    </fieldset>
+        <p>Can you tell us a bit more? We want to annoy you with unwanted ads.😋</p>
+      <fieldset aria-labelledby="personal-information-legend">
+      <legend id="personal-information-legend">Further information</legend>
+      <div>
+      <label for="fav-color">Favorite Color:</label>
+    </div>
+        <input type="color" name="fav-color" id="fav-color" />
+        <div>
+          <label for="fav-animal">What is your favourite animal?</label>
+          <div>
+            <select name="fav-animal" id="fav-animal" name="fav-animal">
+            <option disabled selected hidden>-----------Please choose an option-----------</option>
+            <option value="Capybara">Capybara</option>
+            <option value="Cat">Cat</option>
+            <option value="Dog">Dog</option>
+            <option value="Racoon">Racoon</option>
+            <option value="Raven">Raven</option>
+            <option value="Snake">Snake</option>
+            <option value="Unicorn">Unicorn</option>
+            <option value="Gryffin">Gryffin</option>
+          </select>
+        </div>
+        </div>
+  </fieldset>
+  <button type="submit">Submit</button>
+</section>
+  </body>
+</html>
