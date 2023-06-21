@@ -1,0 +1,7 @@
+.divider {
+  border: none;
+  min-width: 80vw;
+  margin: 20px;
+  height: 1px;
+  background: var(--color-mist);
+}

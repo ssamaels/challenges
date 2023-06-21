@@ -1,0 +1,84 @@
+main {
+  background-color: var(--color-void);
+  min-height: 100vh;
+  min-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  text-align: center;
+  font-size: medium;
+  color: var(--color-void);
+  font-family: "Moon-light";
+  background: url(../../img/il_fullxfull.1787054259_1iis.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: scroll;
+}
+
+/* #motto {
+  position: relative;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  min-width: 80vw;
+  border: solid 2px var(--color-void);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+}
+
+#notes {
+  position: relative;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  min-width: 80vw;
+  border: solid 2px var(--color-void);
+  background-color: transparent;
+}
+
+.motto_label,
+.notes_label {
+  align-self: flex-start;
+  margin-left: 10vw;
+  padding-top: 20px;
+  padding-bottom: 5px;
+} */
+
+/* .createButton {
+  background-color: var(--color-void);
+  color: var(--color-snow);
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.tabBar {
+  display: flex;
+  align-self: flex-start;
+  margin-left: 10vw;
+  margin-top: 15px;
+}
+
+.tab {
+  display: flex;
+  margin-left: 20px;
+  position: relative;
+}
+
+.badge {
+  margin-left: 10px;
+  position: relative;
+  background-color: var(--color-foam);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 50%;
+}
+
+.divider {
+  border: none;
+  min-width: 80vw;
+  margin: 20px;
+  height: 1px;
+  background: var(--color-mist);
+} */

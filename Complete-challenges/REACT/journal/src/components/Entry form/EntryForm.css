@@ -1,0 +1,32 @@
+#motto {
+  position: relative;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  min-width: 80vw;
+  border: solid 2px var(--color-void);
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+}
+
+#notes {
+  position: relative;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  min-width: 80vw;
+  border: solid 2px var(--color-void);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.motto_label,
+.notes_label {
+  position: relative;
+  text-align: left;
+  margin-right: 70vw;
+}

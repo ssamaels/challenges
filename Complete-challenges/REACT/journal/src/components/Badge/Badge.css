@@ -1,0 +1,8 @@
+.badge {
+  margin-left: 10px;
+  position: relative;
+  background-color: var(--color-foam);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 50%;
+}

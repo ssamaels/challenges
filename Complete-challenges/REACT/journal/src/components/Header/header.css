@@ -1,0 +1,10 @@
+header {
+  background-color: var(--color-void);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  color: var(--color-snow);
+  font-family: "Moon-bold";
+}

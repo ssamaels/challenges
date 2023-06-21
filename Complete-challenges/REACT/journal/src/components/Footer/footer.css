@@ -1,0 +1,8 @@
+footer {
+  background-color: var(--color-void);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  color: var(--color-snow);
+}

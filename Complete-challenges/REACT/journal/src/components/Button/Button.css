@@ -1,0 +1,8 @@
+.createButton {
+  background-color: var(--color-void);
+  color: var(--color-snow);
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  font-family: "Moon-light";
+}

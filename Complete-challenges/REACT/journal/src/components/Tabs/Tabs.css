@@ -1,0 +1,6 @@
+.tabBar {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 15px;
+  position: relative;
+}
