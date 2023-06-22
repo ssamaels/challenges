@@ -6,6 +6,36 @@ import Tab from "../Tab/Tab.js";
 import Badge from "../Badge/Badge.js";
 
 export default function Entries() {
+  const entries = [
+    {
+      id: 1000,
+      date: "Feb 5, 2025",
+      motto: "We are in a state of chaos",
+      notes:
+        "Today I learned about React State. It was fun! I can't wait to learn more.",
+    },
+    {
+      id: 999,
+      date: "Feb 4, 2025",
+      motto: "Props, Props, Props",
+      notes:
+        "Today I learned about React Props. Mad props to everyone who understands this!",
+    },
+    {
+      id: 998,
+      date: "Feb 3, 2025",
+      motto: "How to nest components online fast",
+      notes:
+        "Today I learned about React Components and how to nest them like a pro. Application design is so much fun!",
+    },
+    {
+      id: 997,
+      date: "Feb 2, 2025",
+      motto: "I'm a React Developer",
+      notes: "My React-ion when I learned about React: 😍",
+    },
+  ];
+
   return (
     <section className="entries-section">
       <Tabs>
@@ -17,24 +47,17 @@ export default function Entries() {
         </Tab>
       </Tabs>
       <div className="entries-section__entries">
-        <Entry
-          date="Jun 21, 2023"
-          motto="Licks paws"
-          notes="Cat ipsum dolor sit amet, hopped up on catnip. Adventure always bite nose of your human but no, you can't close the door, i haven't decided whether or not i wanna go out for do not try to mix old food with new one to fool me!"
-        />
-        <Divider />
-        <Entry
-          date="Jun 20, 2023"
-          motto="Thoughts"
-          notes="Nyan nyan goes the cat, scraaaaape scraaaape goes the walls when the cat murders them with its claws bite the neighbor's bratty kid i want to go outside let me go outside nevermind inside is better. Stretch out on bed mmmmmmmmmeeeeeeeeooooooooowwwwwwww sun bathe."
-        />
-        <Divider />
-        <Entry
-          date="Jun 19, 2023"
-          motto="Cat banana"
-          notes="Mew scream at teh bath scratch the postman wake up lick paw wake up owner meow meow munch, munch, chomp, chomp."
-        />
-        <Divider />
+        {entries.map((entry, index) => (
+          <>
+            {index !== 0 && <Divider />}
+            <Entry
+              key={entry.id}
+              date={entry.date}
+              motto={entry.motto}
+              notes={entry.notes}
+            />
+          </>
+        ))}
       </div>
     </section>
   );
