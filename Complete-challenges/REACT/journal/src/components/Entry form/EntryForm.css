@@ -9,6 +9,8 @@
   border-radius: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 7px;
+  padding-right: 7px;
   background-color: transparent;
 }
 
@@ -21,6 +23,10 @@
   min-width: 80vw;
   border: solid 2px var(--color-void);
   border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 7px;
+  padding-right: 7px;
   background-color: transparent;
 }
 
