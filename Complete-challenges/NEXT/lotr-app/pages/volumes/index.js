@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function Books() {
   const router = useRouter();
-  const handleRandomVolume = () => {
+  function handleRandomVolume() {
     const randomVolume = getRandomElement(volumes);
     router.push(`/volumes/${randomVolume.slug}`);
-  };
+  }
   function getRandomElement(array) {
     return array[Math.floor(Math.random() * array.length)];
   }

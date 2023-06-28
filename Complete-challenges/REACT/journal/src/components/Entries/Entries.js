@@ -5,23 +5,41 @@ import Tabs from "../Tabs/Tabs.js";
 import Tab from "../Tab/Tab.js";
 import Badge from "../Badge/Badge.js";
 
-export default function Entries({ entries }) {
-  // Accept entries as a prop
+export default function Entries({
+  entries,
+  onToggleFavorite,
+  filter,
+  onShowAllEntries,
+  onShowFavoriteEntries,
+  allEntriesCount,
+  favoriteEntriesCount,
+}) {
+  const favoriteEntries = entries.filter((entry) => entry.isFavorite);
+
+  const displayedEntries = filter === "favorites" ? favoriteEntries : entries;
+
   return (
     <section className="entries-section">
       <Tabs>
-        <Tab active>
-          All Entries <Badge isActive>3</Badge>
+        <Tab active={filter === "all"} onClick={onShowAllEntries}>
+          All Entries <Badge isActive>{allEntriesCount}</Badge>
         </Tab>
-        <Tab>
-          Favorites <Badge>1</Badge>
+        <Tab active={filter === "favorites"} onClick={onShowFavoriteEntries}>
+          Favorites <Badge>{favoriteEntriesCount}</Badge>
         </Tab>
       </Tabs>
       <div className="entries-section__entries">
-        {entries.map((entry, index) => (
+        {displayedEntries.map((entry, index) => (
           <div key={entry.id}>
             {index !== 0 && <Divider />}
-            <Entry date={entry.date} motto={entry.motto} notes={entry.notes} />
+            <Entry
+              date={entry.date}
+              motto={entry.motto}
+              notes={entry.notes}
+              isFavorite={entry.isFavorite}
+              id={entry.id}
+              onToggleFavorite={onToggleFavorite}
+            />
           </div>
         ))}
       </div>

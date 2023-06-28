@@ -13,6 +13,10 @@ export default function VolumeDetail() {
   const nextVolumeSlug =
     volumeIndex < volumes.length - 1 ? volumes[volumeIndex + 1].slug : null;
 
+  if (!volume) {
+    return null;
+  }
+
   return (
     <>
       {" "}
