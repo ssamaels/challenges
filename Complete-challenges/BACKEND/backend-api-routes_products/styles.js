@@ -11,9 +11,4 @@ export default createGlobalStyle`
     margin: 0;
     font-family: system-ui;
   }
-
-@font-face {
-  font-family: 'LotrFont';
-  src: url('/Font/RingbearerMedium-51mgZ.ttf') format('truetype');
-}
 `;

@@ -10,10 +10,6 @@ export default createGlobalStyle`
   body {
     margin: 0;
     font-family: system-ui;
+    font-size: 16px;
   }
-
-@font-face {
-  font-family: 'LotrFont';
-  src: url('/Font/RingbearerMedium-51mgZ.ttf') format('truetype');
-}
 `;

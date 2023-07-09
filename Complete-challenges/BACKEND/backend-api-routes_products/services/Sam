@@ -1,0 +1,42 @@
+const human = {
+  name: {
+    first: "Samael",
+    last: "Szep",
+  },
+  occupation: "Artist",
+  age: 28,
+  residency: "Berlin",
+  origin: "Novi Sad, Serbia",
+};
+
+let occupation = [
+  {
+    id: "1",
+    name: "Developer",
+    description: "Full Stack",
+    since: 2023,
+  },
+  {
+    id: "2",
+    name: "Tattoo Artist",
+    description: {
+      style1: "Black & Grey",
+      style2: "Pointillism",
+      style3: "Fineline",
+      style4: "Blackwork",
+    },
+    since: 2018,
+  },
+  {
+    id: "3",
+    name: "Interior Designer",
+    description: "Decorating homes, making & restauring furniture",
+    since: 2014,
+  },
+  {
+    id: "4",
+    name: "Painter",
+    description: "Mixed styles",
+    since: 1995,
+  },
+];
